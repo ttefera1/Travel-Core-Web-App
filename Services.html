@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel = "icon" type = "image/png" href="Images/favicon.png"/><title >Travel Core</title>
+	<link rel="stylesheet" type="text/css" href="Services.css">
+
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+</head>
+<body>
+	<div class="hero">
+       
+        
+		<nav>
+            <img rel = "logo" type = "image/png" src = "Images/favicon2.png" class="logoicon">
+            <img rel = "log" type = "image/png" src = "Images/logo.png" class="logo">
+			
+			  <ul class="mainMenu">
+                 <li><a href="Home.html" class='active'><i class="fa fa-home"></i>Home</a></li>
+                 <li><a href="#" class = 'service'><i class="fa fa-clone"></i>Services</a>
+                        <div class = "sub_menu_service">
+                            <ul>
+                                <li><a href="Hotel.html" ><i class="fa fa-bed"></i>Hotel</a></li>
+                                <li><a href="car.html" ><i class="fa fa-car"></i>Car Rental</a></li>
+                                <li><a href="flights.html" ><i class="fa fa-plane"></i>Flights</a></li>
+                            </ul>
+                        </div>
+                 </li>
+                 <li><a href="Information.html" class="info"><i class="fa fa-info-circle"></i>Information</a>
+                    <div class = "sub_menu_info">
+                        <ul>
+                          <li><a href="map.html" ><i class="fa fa-map-marker"></i>Map</a></li>
+                          <li><a href="weather.html"><i class="fa fa-umbrella"></i>Weather</a></li>
+                          <li><a href="poltics" ><i class="fa fa-exclamation-triangle"></i>Poltics</a></li>
+                         </ul></div></li>
+                 <li><a href="AboutUs.html"><i class="fa fa-address-card"></i>About Us</a></li>
+
+			  </ul>
+        <a href="Home.html" id= "signout" class="signout" onclick="signoutTasks()" >Sign Out</a>
+		<p><span id="username">Welcome,    <i class="fa fa-user"></i></span></p>
+        <div id="usernameContainer" class="hidden">
+            <span id="usernameDisplay"></span>
+         </div>
+		<a href="#" id="favs" class="favorites">Favorites</a>
+              <a href="SignUP.html" class="signUpButton"> Sign up/Sign in</a>
+		</nav>
+<p>Choose a Date Range:</p>
+		<div class="input-field">
+		<i class="fa-solid fa-plane-arrival"></i>
+		<input type="text", placeholder="Where from?" id = "arrival" class="arrival" >
+		<i class="fa-solid fa-plane-departure"></i>
+		<input type="text", placeholder="Where to?" id = "departure" class="departure" >
+		<input type="date" id="start-date" name="start-date" class = "start-date">
+		<input type="date" id="end-date" name="end-date" class = "end-date">
+		</div>
+    </body>
+<!------footer--------->
+<div class="footer">
+	<footer >
+		<p>Contact US we are next to you </p>
+		<div class="social">
+			<a href="#"><i class="fab fa-instagram"></i></a>
+			<a href="#"><i class="fab fa-twitter"></i></a>
+			<a href="#"><i class="fab fa-facebook-f"></i></a>
+		</div>
+		<p class="end">Copy right @ ...</p>
+	</footer>
+</div></section>
+</body>
+<script src="Services.js"></script>
+
+</html>

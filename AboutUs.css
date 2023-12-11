@@ -1,0 +1,341 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family-Poppins");
+@font-face {
+	font-family: "MemphisRiver";
+	src: url(Fonts/Memphis\ River.otf);
+}
+*{
+	padding: 0;
+	margin: 0;
+	font-family: 'Josefin Sans', sans-serif;
+	box-sizing: border-box;
+}
+.main{
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	width: 1130px;
+	max-width: 98%;
+	margin: 0 auto;
+}
+.hero .hedt{
+    margin-right: 30%;
+	left: 50%;
+	font-size: 3rem;
+	color: white;
+	font-family: "MemphisRiver", sans-serif ;
+}
+.hero{
+	height: 100vh;
+	width: 100%;
+	
+	
+	
+}
+.logoicon{
+	
+	width: 40px;
+	margin-left: -60px;
+	margin-top: 0px;
+}
+nav{
+	
+	margin-right: 0px;
+	width:100%;
+	height: 70px;
+	position: absolute;
+	top:0;
+	left: 0;
+	right: 0;
+	padding: 10px 8%;
+	display: flex;
+	align-items: center;
+	border-width: 2px;
+	background-image: linear-gradient(rgba(9, 9, 9, 0.4),rgba(5, 5, 23, 0.4));
+}
+
+nav ul{
+	margin-left: 3%;
+	margin-right: 30%;;
+}
+.mainMenu .fa{
+	margin-right:8px;
+}
+nav ul li{
+	margin-left: 20px;
+	padding: 6px  6px 6px 6px;
+	list-style-type: none;
+    display:inline-block ;
+	
+}
+nav ul li a{
+	
+    padding: 6px  6px 6px 6px;
+	color: white;
+	font-weight: bold;
+	text-decoration: none;
+	text-transform: capitalize;
+    transition: .6s;
+    text-align: left;    
+}
+nav ul li a:hover,
+nav ul li a.active{
+	color: rgb(230, 210, 33);
+	transition: .6s;
+    transform: scale(1,1);    
+}
+.mainImg img{
+    width: 100%;
+    height: 350px;
+}
+.greece{
+            top: 50px;
+            left: 180px;
+            width: 300px;
+            height: 200px; 
+            background-color: #eaeaea; 
+            border-radius: 200px 200px 0 0; 
+            overflow: hidden; 
+            position: relative;
+}
+.pexels{
+    top: 50px;
+    left: 630px;
+    width: 300px;
+    height: 200px; 
+    background-color: #eaeaea; 
+    border-radius: 200px 200px 0 0; 
+    overflow: hidden; 
+    position: relative;
+}
+.greeceNote p{
+    color: black;
+    top: 80px;
+    left: 150px;
+    position: relative;
+    font-size: 1.3rem;
+    
+}
+.pexelsNote p{
+    color:black;
+    top:  -30px;
+    left: 900px;
+    position: relative;
+    font-size: 1.3rem;
+    
+}
+.pexelsNote h3{
+    position: relative;
+    color: blue;
+    top: -40px;
+    left: 1000px;
+    bottom: 20px;
+}
+.greeceNote h3{
+    position: relative;
+    color: blue;
+    top: 70px;
+    left: 250px;
+    
+    
+}
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+ul{
+	list-style: none;
+}
+footer{
+	
+	margin-top: 40px;
+	border-top: 4px solid blue;
+	border-top-left-radius: 125px;
+	background-color: #1a1a1b;
+    padding: 70px 0;
+}
+.footer-col{
+   width: 25%;
+   padding: 0 15px;
+}
+.footer-col p{
+	color: white;
+	margin-bottom: 8px;
+}
+.footer-col h2{
+	left: -300px;
+	font-size: 3rem;
+	color: white;
+	font-family: "MemphisRiver", sans-serif ;
+	transition:linear 3s;
+
+}
+.footer-col h2:hover{
+padding: 40px;
+}
+
+.footer-col h3{
+	font-size: 18px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+
+.footer-col h3::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color:blue;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+.underline{
+	width: 20%;
+	height:5px;
+	background-color:blue;
+	border-radius: 3px;
+	position: absolute;
+	top:25px;
+	left: 0;
+	overflow: hidden;
+}
+.underline span{
+	width: 15px;
+	height: 100%;
+	background: white;
+	border-radius: 3px;
+	position:absolute;
+	top: 0;
+	left: 10px;
+	animation: moving 2s linear infinite;
+}
+@keyframes moving{
+	0%{
+		left: -20px;
+	}
+	100%{
+		left: 100%;
+	}
+}
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #bbbbbb;
+	display: block;
+	transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+	color: #ffffff;
+	padding-left: 8px;
+}
+.footer-col .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+
+.footer-col .social-links a:hover{
+	color: #24262b;
+	background-color: #ffffff;
+}
+.footer form{
+	padding-bottom: 15px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	border-bottom: 1px solid #ccc;
+	margin-bottom: 50px;
+}
+form .far{
+	position: relative;
+	font-size: 18px;
+	margin-right: -15px;
+    bottom: -30px;
+    color: gray;
+}
+.footer-col form input::placeholder{
+	left: 60px;
+}
+form input{
+	width: 100%;
+	background: transparent;
+	color: white;
+	border:2px solid yellow ;
+	outline: none;
+	padding: 12px;
+	border-radius: 20px;
+}
+
+form button{
+	font-weight: bolder;
+	font-size: 1rem;
+	padding: 15px;
+	border: none;
+	border-top-right-radius: 60px;
+	border-bottom-right-radius: 60px;
+	background-color: rgb(230, 210, 33);
+	box-shadow: inset 0 0 0 0 rgb(103, 93, 10);
+	color: black;
+	display: inline-block;
+	outline: none;
+	position: relative;
+	width: 70px;
+	height: 40px;
+	top: -41px;
+	left: 267px;
+}
+form button:hover{
+box-shadow: inset 380px 0 0 0 rgb(230, 210, 33);
+	transition: .8s;
+	cursor: pointer;}
+
+/*responsive*/
+@media(max-width: 767px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+}
+}
+@media(max-width: 574px){
+  .footer-col{
+    width: 100%;
+}
+}
+
+.email-id{
+	width: fit-content;
+	border-bottom: 1p solid gray;
+	margin: 20;
+}
+.end{
+	color: white;
+	text-align: center;
+}
+.container2{
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    overflow: hidden;
+	margin-left: 30Px;
+	overflow: hidden;
+}

@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family-Poppins");
+@font-face {
+	font-family: "MemphisRiver";
+	src: url(Fonts/Memphis\ River.otf);
+}
+*{
+	padding: 0;
+	margin: 0;
+	font-family: 'Josefin Sans', sans-serif;
+	box-sizing: border-box;
+}
+.main{
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	width: 1130px;
+	max-width: 98%;
+	margin: 0 auto;
+}
+
+nav{
+	
+	margin-right: 0px;
+	width:100%;
+	height: 55px;
+	position: absolute;
+	top:0;
+	left: 0;
+	right: 0;
+	padding: 10px 8%;
+	display: flex;
+	align-items: center;
+	border-width: 2px;
+	background-image: linear-gradient(rgba(9, 9, 9, 0.4),rgba(5, 5, 23, 0.4));
+}
+
+nav ul{
+	margin-left: 3%;
+	margin-right: 30%;;
+}
+.mainMenu .fa{
+	margin-right:8px;
+}
+nav ul li{
+	margin-left: 20px;
+	padding: 6px  6px 6px 6px;
+	list-style-type: none;
+    display:inline-block ;
+	
+}
+nav ul li a{
+	
+    padding: 6px  6px 6px 6px;
+	color: white;
+	font-weight: bold;
+	text-decoration: none;
+	text-transform: capitalize;
+    transition: .6s;
+    text-align: left;    
+}
+nav ul li a:hover{
+	color: rgb(230, 210, 33);
+	transition: .6s;
+    transform: scale(1,1);    
+}
+.contact{
+    
+    position: relative;
+    min-height: 100vh;
+    padding: 50px 100px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column;
+    background: url(Images/contact.jpg)
+}
+.contact .content h2{
+   font-size: 2rem; 
+   font-weight: 800;
+   color: white;
+
+}
+.contact .contact p{
+    font-weight: 300;
+    color: white;
+}
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+.container .contactInfo{
+    margin-right: 160px;
+}
+.container .contactInfo .box{
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+}
+.container .contactInfo .box .icon{
+    min-width: 60px;
+    height:60px;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 22px;
+}
+.container .contactInfo .box .text{
+    display: flex;
+    margin-left: 20px;
+    color: white;
+    flex-direction: column;
+    font-weight: 300;
+}
+.container .contactInfo .box .text h3{
+    font: wight 500;
+    color: rgb(230, 210, 33);
+}
+.contactForm .inputBox:nth-child(4){
+   padding-top: 10px;
+    padding-bottom: 80px;
+    border: 1px solid #666;
+}
+.contactForm .inputBox:nth-child(4) input{
+    margin-top: 20px;
+    border-bottom: none;
+}
+.contactForm{
+    width: 30%;
+    padding: 70px;
+    background: white;
+}
+.contactForm h2{
+    font-size: 30px;
+    color:#333;
+    font-weight: 500;
+}
+.contactForm .inputBox{
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+}
+.contactForm .inputBox input{
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10pz 0;
+    border: none;
+    border-bottom: 2px solid #333;
+    outline: none;
+    resize: none;
+}
+.contactForm .inputBox span{
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: 0.5s;
+    color: #666;
+}
+.contactForm .inputBox input:focus ~span,
+.contactForm .inputBox input:valid ~span,
+.contactForm .inputBox textarea:focus ~span,
+.contactForm .inputBox textarea:valid ~span{
+    color: #e91e63;
+    font-size: 12px;
+    transform: translateY(-20px);
+}
+.contactForm .inputBox input[type = "submit"]{
+    width: 100px;
+    background-color: rgb(230, 210, 33);
+    color: black;
+    border-radius: 20px;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+
+}
+@media(max-width: 991px){
+    .contact{
+        padding: 50px;
+    }
+    nav{
+	
+       
+        height: 55px;}
+    .container{
+        flex-direction: column;
+    }
+    .container .contactInfo{
+        margin-bottom: 40px;
+    }
+    .container .contactForm, .contactForm{
+        width: 100%;
+    }
+}

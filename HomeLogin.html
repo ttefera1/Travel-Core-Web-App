@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel = "icon" type = "image/png" href="Images/favicon.png"/><title >Travel Core</title>
+	<link rel="stylesheet" type="text/css" href="Home.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     
+
+</head>
+<body>
+	<div class="hero">
+        <div class = "video-container">
+        <video autoplay loop muted plays-inline class = "back-video">
+            <source src="Images/back_Video.mp4" type="video/mp4">
+        </video></div>
+       
+		<nav>
+            <p class="hedt"><i class="fa-solid fa-globe fa-beat-fade" style="color: #f4f11f;"></i>  Travel Core</p><div class="openMenu">
+        <li class="fa fa-bars"></li>
+          </div>
+      <ul class="mainMenu">
+         <li><a href="#" class='active'><i class="fa fa-home"></i>Home</a></li>
+         <li><a href="#" class = 'service'><i class="fa fa-clone"></i>Services</a>
+                <div class = "sub_menu_service">
+                    <ul>
+                        <li><a href="Hotels.html" ><i class="fa fa-bed"></i>Hotel</a></li>
+                        <li><a href="car_Rental.html" ><i class="fa fa-car"></i>Car Rental</a></li>
+                        <li><a href="Flight.html" ><i class="fa fa-plane"></i>Flights</a></li>
+                    </ul>
+                </div>
+         </li>
+         <li><a href="Map.html" ><i class="fa fa-map"></i>Attractions</a></li>
+         <li><a href="ContactUs.html" class="info"><i class="fa fa-info-circle"></i>Contact US</a>
+            
+         <li><a href="AboutUs.html"><i class="fa fa-address-card"></i>About Us</a></li>
+         <li><a href ="#"><i class="fa fa-user"></i> Profile</a>
+            <div class = "sub_menu_Profile">
+                <ul>
+                  <li><a href="#" id = "userName" >Name</a></li>
+                  <li><a href="#"><i class="fa fa-heart"></i>Favorites</a></li>
+                  <li><a href="Home.html" id = "signout" onclick="signoutTasks()">Sign Out</a></li>
+                 </ul></div></li>
+                 <div class="closeMenu"><i class="fa fa-times"></i></div>
+      </ul>
+</nav>
+<div class ="promlogo"><h1>Dream your next tour with us</h1></div>
+<div class = "search">
+    <input  type="search" placeholder="Enter your destination ..."  id = 'city_name' >
+    <input id="search-button" type="button" onclick="check_input();" value="Search" />;
+  </div>
+<div class ="promotion">
+<div class="promImage">
+     <img src="Images/Egypt3.jpg" alt="Image 3">
+      <!-- Add more images as needed -->
+    </div>
+   
+<div class = "news">
+    <div class="hot">
+    
+    <i class="fa-solid fa-circle fa-beat" style="color: #c5351b;"><span>Hot</span></i>
+    </div>
+    <h2 class = "hotnews"> Egypt <br> <h5>short time deal<br></h5></h2>
+    
+    <div class = "days">
+    <p> 7 NIGHTS <br> +AIRFARE</p>
+    <p class="price">$3000</p>
+    </div>
+    <a href="https://www.booking.com/" class="bookButton">BOOK NOW</a></div>
+    </div>
+    
+</div>
+<section class="nonHome">
+<h2 class="slideHeader">Get inspiration for your next trip</h2>
+<div class="container">
+
+<div class="slide">
+
+    
+    <div class="item" style="background-image: url(Images/SouthKor.jpg);">
+        <div class="content">
+            <div class="name">SouthKorea</div>
+            <div class="des">6 luxurious SouthKorea Resorts, Meets traditional culture and natural beauty!</div>
+            <i class="fa-solid fa-star" style="color: #e5992e;">
+            </i><i class="fa-solid fa-star" style="color: #e5992e;"></i>
+            <i class="fa-solid fa-star" style="color: #e5992e;"></i>
+            <i class="fa-solid fa-star" style="color: #e5992e;"></i>
+            <i class="fa-solid fa-star" style="color: #e5992e;"></i><br><br>
+            <button>See More</button>
+        </div>
+    </div>
+    <div class="item" style="background-image: url(Images/paris.jpeg);">
+        <div class="content">
+            <div class="name">Paris</div>
+            <div class="des">Whether for romance, history, indulgence, fashion or artistic inspiration !</div>
+            <i class="fa-solid fa-star" style="color: #e5992e;">
+            </i><i class="fa-solid fa-star" style="color: #e5992e;"></i>
+            <i class="fa-solid fa-star" style="color: #e5992e;"></i>
+            <i class="fa-solid fa-star" style="color: #e5992e;"></i>
+            <i class="fa-solid fa-star" style="color: #f5f5f5;"></i><br><br>
+            <button>See More</button>
+        </div>
+    </div>
+    <div class="item" style="background-image: url(Images/Antarctica_Adrenaline_Junkie.jpg);">
+        <div class="content">
+            <div class="name">Australia</div>
+            <div class="des">Play of adventurous, to be a part of adventurous!</div>
+            <i class="fa-solid fa-star" style="color: #e5992e;">
+            </i><i class="fa-solid fa-star" style="color: #e5992e;"></i>
+            <i class="fa-solid fa-star" style="color: #e5992e;"></i>
+            <i class="fa-solid fa-star" style="color: #e5992e;"></i>
+            <i class="fa-solid fa-star" style="color: #f5f5f5;"></i><br><br>
+            <button>See More</button>
+        </div>
+    </div>
+    <div class="item" style="background-image: url(Images/Japan.jpg);">
+        <div class="content">
+            <div class="name">Japan</div>
+            <div class="des">Summer fastivals in Japan, Climb a mountian for golden autumn!</div>
+            <i class="fa-solid fa-star" style="color: #e5992e;">
+            </i><i class="fa-solid fa-star" style="color: #e5992e;"></i>
+            <i class="fa-solid fa-star" style="color: #e5992e;"></i>
+            <i class="fa-solid fa-star" style="color: #e5992e;"></i>
+            <i class="fa-solid fa-star" style="color: #f5f5f5;"></i><br><br>
+            <button>See More</button>
+        </div>
+    </div>
+    <div class="item" style="background-image: url(https://i.ibb.co/jTQfmTq/img5.jpg);">
+        <div class="content">
+            <div class="name">Netherland</div>
+            <div class="des">The beauty of bloom, where to be!</div>
+            <i class="fa-solid fa-star" style="color: #e5992e;">
+            </i><i class="fa-solid fa-star" style="color: #e5992e;"></i>
+            <i class="fa-solid fa-star" style="color: #e5992e;"></i>
+            <i class="fa-solid fa-star" style="color: #e5992e;"></i>
+            <i class="fa-solid fa-star" style="color: #e5992e;"></i><br><br>
+            <button>See More</button>
+        
+    </div>
+    </div>
+    <div class="item" style="background-image: url(https://i.ibb.co/RNkk6L0/img6.jpg);">
+        
+        <div class="content">
+            <div class="name">Ireland</div>
+            <div class="des">Where to ride, hike, run, surf and paddle on the Emerald Isle!</div>
+            <i class="fa-solid fa-star" style="color: #e5992e;">
+            </i><i class="fa-solid fa-star" style="color: #e5992e;"></i>
+            <i class="fa-solid fa-star" style="color: #e5992e;"></i>
+            <i class="fa-solid fa-star" style="color: #e5992e;"></i>
+            <i class="fa-solid fa-star" style="color: #e5992e;"></i><br><br>
+            <button>See More</button>
+        </div>
+    
+    </div>
+
+</div>
+
+<div class="button">
+    <button class="prev"><i class="fa-solid fa-arrow-left"></i></button>
+    <button class="next"><i class="fa-solid fa-arrow-right"></i></button>
+</div>
+
+</div>
+
+<div class = "Services">
+
+<h2>Our Best Services</h2>
+<br><br>
+<div class = "form-box">
+<button class = "catagory" id = "catagory-w" onclick= "openWeather();">
+<div >
+<i class="fa-solid fa-sun fa-spin" style="color: #dec054;"></i>
+<i class="fa-solid fa-cloud fa-beat" style="color: #2c3b68;"></i><br>
+<i class="fa-solid fa-wind fa-flip"></i><i class="fa-solid fa-cloud-bolt fa-bounce" style="color: #273b62;"></i>
+
+<h3>Check<br>Weather</h3>
+<h3>Check your destination Weather. Dress as per the weather</h3>
+<a class = "weather" href="Weather.html">Weather</a>
+</div></button>
+<button class = "catagory" id = "catagory-f" onclick= "openFlight();">
+<div  >
+<i class="fa-solid fa-plane-departure fa-beat-fade" style="color: #25b6f4;"></i>
+<i class="fa-solid fa-earth-americas fa-beat-fade" style="color: #4790bd;"></i>
+<h3>Search <br>Flights</h3>
+<h3>Search best flights. <br></h3>
+<a class = "weather" href="Flight.html">Flight</a>
+</div></button>
+<button class = "catagory" id = "catagory-h" onclick= "openHotels();">
+<div >
+<i class="fa-solid fa-hotel fa-fade" style="color: #693f48;"></i>
+<i class="fa-solid fa-bed fa-fade" style="color: #b186a4;"></i><br>
+<i class="fa-solid fa-bath fa-fade" style="color: #6c6284;"></i>
+<i class="fa-solid fa-mug-hot fa-fade" style="color: #a468ac;"></i>
+<h3>Find <br>Hotels</h3>
+<h3>Get home like hotes. Enjoy your Stay</h3>
+<a class = "weather" href="Hotels.html">Hotels</a>
+</div></button>
+<button class = "catagory" id = "catagory-c" onclick= "openCar();">
+<div >
+<i class="fa-solid fa-car fa-beat" style="color: #8b654b;"></i>
+<i class="fa-solid fa-car-side fa-beat-fade" style="color: #9fabc1;"></i>
+<h3><br>Car rental</h3>
+<h3>Get your car as per your budget. </h3>
+<a class = "weather" href="Car_Rental.html">Car Rentl</a>
+</div></button>
+
+</div>
+</div>
+</div>
+<div class = "Selling">
+    
+    <h2>Frequently Checked Destinations</h2>
+    <br><br>
+    
+    <div class = "form-box">
+        <ul>
+    <div class = "destination">
+        
+        <img src="Images/Australia.webp">
+        <i class="fa-regular fa-heart" style="color: #719be5;"></i>
+        
+        <h3>Highlights of Australia: The Great Barrier Reef to Sydney</h3>
+        <p>12days| 16 days with Adelaide & Kangaroo Island extension</p>
+        <br>
+        <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i> 95
+            <br> From <s>$3,699*</s> <span class="price">$3,499*</span>
+            <button class = 'tour'>View tour</button>
+        </div>
+         
+    <div class = "destination">
+        <img src="Images/RiodeJaneiro.jpeg">
+        <i class="fa-regular fa-heart" style="color: #719be5;"></i>
+        <h3>Rio de Janeiro, Brazil</h3>
+        <h3>Enjoy the vibrant atmosphere of Rio de Janeiro's beaches and nightlife.</h3>
+        <br>
+        <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i> 97
+            <br> From <s>$3,999*</s> <span class="price">$3,799*</span>
+            <button class = 'tour'>View tour</button>
+    </div>
+    <div class = "destination">
+        
+        <img src="Images/Japan.jpg">
+        <i class="fa-regular fa-heart" style="color: #719be5;"></i>
+        <h3>Tokyo, Japan</h3>
+        <h3>Experience the vibrant culture of Tokyo.</h3>
+        <br>
+        <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i> 98
+            <br> From <s>$4,099*</s> <span class="price">$3,989*</span>
+            <button class = 'tour'>View tour</button>
+    </div></ul>
+    <ul>
+    <div class = "destination">
+        <img src="Images/London.webp">
+        <i class="fa-regular fa-heart" style="color: #719be5;"></i>
+        <h3>London, United Kingdom</h3>
+        <h3>Experience the historic charm of London.</h3>
+        <br>
+        <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i> 98
+            <br> From <s>$4,499*</s> <span class="price">$4,299*</span>
+            <button class = 'tour'>View tour</button>
+    </div>
+    <div class = "destination">
+        <img src="Images/Sydney2.webp">
+        <i class="fa-regular fa-heart" style="color: #719be5;"></i>
+        
+        <h3>Australia for Solo Travelers: Melbourne, Queensland Coast & Sydney</h3>
+           <p> 15 days |  18 days with Tasmania extension</p>
+        <br>
+        <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i> 98
+            <br> From <s>$4,899*</s> <span class="price">$4,499*</span>
+            <button class = 'tour'>View tour</button>
+    </div></ul>
+   
+</div>
+    </div>
+</div>
+<div class = "Antarctica">
+    <h2 class="titleH2"> Best of Antarctica</h2>
+    <br><br>
+    <ul class="Penguins">
+        <li><img src="Images/Penguins.jpg" alt=""> </li>
+        <li> <h2>Penguins, Albatrosses & Whales</h2>
+            <span><br<<br>Penguins: Penguins are aquatic, flightless birds that are highly <br></span>
+                 <span>adapted for life in the water. They're excellent swimmers and primarily<br>
+                 <span>  found in the Southern, especially in Antarctica. There are various<br> </span>
+                <span>  species of penguins, each with specific characteristics and</span><span> habitats.</span><br><br><br>
+            </li></ul>
+       <ul class = "Serene">
+            <li><img src="Images/Serene.jpg" alt=""> </li>
+            <li><h2>Serene white wonderland</h2>
+                <span>"Serene white wonderland" often refers to a picturesque, tranquil, and<br></span>
+                <span>beautiful setting where the predominant feature is the color white,</span><br>
+                <span>  creating a sense of peace, purity, and beauty.</span> <br>
+                <span>It could evoke images of landscapes or scenes covered in pristine,</span><br>
+                <span>  white snow, such as a snowy forest, mountains, or a serene </span>
+                <span>snow-covered countryside.</span><br><br><br></li></ul>
+        <ul class = "Adneraline">
+            <li><img src="Images/Antarctica_Adrenaline_Junkie.jpg" alt=""> </li>
+            <li><h2>Adrenaline Junkie</h2>
+                <span>An "adrenaline junkie" is a term used to </span><br>
+                <span> someone who actively seeks out thrilling, intense, and high-risk</span><br>
+                <span>activities that provide an adrenaline rush. These individuals are often </span><br>
+                <span>drawn to extreme or adventurous pursuits and are constantly seeking </span><br>
+                <span> excitement and the thrill of pushing their limits.</span><br><br><br></li></ul>
+</div>
+</div>
+<!------Contact us--------->
+
+<footer >
+    <div class="row">
+        <div class ="footer-col">
+            <h2 calss="footerHeader">Travel Core</h2>
+        </div>
+        <div class ="footer-col">
+        <h3>Office Address <div class = "underline"><span></span></div></h3>
+        <p>Chicago St.</p>
+        <p>Chicago, IL</p>
+        <p>201 60459-4587</p>
+        <p class="email-id">travelCore@outlook.com</p>
+        <p><i class="fa-solid fa-phone fa-beat" style="color: #0ea026;"></i>  +888-888-8888</p>
+    </div>
+        <div class ="footer-col">
+        <h3>Links<div class = "underline"><span></span></div></h3>
+        <ul class = "link">
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="">Services</a></li>
+            <li><a href="">About Us</a></li>
+            <li><a href="">Contactus</a></li>
+        </ul>
+    </div>
+        <div class ="footer-col">
+        <h3> Newsletter<div class = "underline"><span></span></div></h3>
+        <form>
+            <i class="far fa-envelope"></i>
+            <input type="email" placeholder="Enter your email id" required>
+            <button type="submit"><i class="fas fa-arrow-right"></i></button>
+        </form>
+        <div class="social-links">
+            <a href="#"><i class="fa-brands fa-square-instagram fa-lg" style="color: #e15664;"></i></a>
+        <a href="#"><i class="fa-brands fa-twitter fa-lg" style="color: #2f77f4;"></i></a>
+        <a href="#"><i class="fa-brands fa-facebook fa-lg" style="color: #2a74f4;"></i></a>
+        <a href="#"><i class="fa-solid fa-phone fa-beat" style="color: #0ea026;"></i></a>
+        </div>
+        </div>
+    </div>
+   
+    <p class="end">Copy right @ ...</p>
+</footer>
+</section>
+</body>
+<script src="HomeLogin.js" ></script>
+
+</html>
+
+
+	
