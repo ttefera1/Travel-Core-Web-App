@@ -11,6 +11,9 @@ const options = {
 	}
 };
 let city = document.getElementById('arrival').value;
+let arrivalDate = document.getElementById('start-date').value;
+let DepartureDate = document.getElementById('end-date').value;
+let adult = document.getElementById('Adults').value;
 console.log(city);
 document.getElementById('title1').innerHTML = `<h3> Hotels in  ${city}:- </h3>`
 fetch(`https://booking-com15.p.rapidapi.com/api/v1/hotels/searchDestination?query=${city}`,options)
@@ -20,7 +23,7 @@ fetch(`https://booking-com15.p.rapidapi.com/api/v1/hotels/searchDestination?quer
 des_data.map(item=> {
         console.log(item.dest_id);
         console.log(item.search_type);
-        fetch(`https://booking-com15.p.rapidapi.com/api/v1/hotels/searchHotels?dest_id=${item.dest_id}&search_type=district&arrival_date=2023-12-14&departure_date=2023-12-22&adults=1&children_age=0%2C17&room_qty=1&page_number=1&languagecode=en-us&currency_code=USD`,options)
+        fetch(`https://booking-com15.p.rapidapi.com/api/v1/hotels/searchHotels?dest_id=${item.dest_id}&search_type=district&arrival_date=${arrivalDate}&departure_date=${DepartureDate}&adults=${adult}&children_age=0%2C17&room_qty=1&page_number=1&languagecode=en-us&currency_code=USD`,options)
         .then(response => response.json())
         .then(response => {
             let source = response.data.hotels;

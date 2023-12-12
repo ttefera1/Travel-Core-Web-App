@@ -12,6 +12,8 @@ document.getElementById("search-button").addEventListener("click", function (eve
     };
     
     let city = document.getElementById('Pick-up').value;
+    let pickupDate = document.getElementById('start-date').value;
+let dropoffDate = document.getElementById('end-date').value;
     document.getElementById('title1').innerHTML = `<h3> Car rentals in ${city} :- </h3>`
     fetch(`https://booking-com15.p.rapidapi.com/api/v1/cars/searchDestination?query=${city}`,options)
     .then(res=> res.json())
@@ -20,7 +22,7 @@ document.getElementById("search-button").addEventListener("click", function (eve
     des_data.map(item=> {
         console.log(item.coordinates.latitude);
         console.log(item.coordinates.longitude);
-            fetch(`https://booking-com15.p.rapidapi.com/api/v1/cars/searchCarRentals?pick_up_latitude=${item.coordinates.latitude}&pick_up_longitude=${item.coordinates.longitude}&drop_off_latitude=${item.coordinates.latitude}&drop_off_longitude=${item.coordinates.longitude}&pick_up_date=2023-12-12&drop_off_date=2023-12-17&pick_up_time=10%3A00&drop_off_time=10%3A00&driver_age=30&currency_code=USD`,options)
+            fetch(`https://booking-com15.p.rapidapi.com/api/v1/cars/searchCarRentals?pick_up_latitude=${item.coordinates.latitude}&pick_up_longitude=${item.coordinates.longitude}&drop_off_latitude=${item.coordinates.latitude}&drop_off_longitude=${item.coordinates.longitude}&pick_up_date=${pickupDate}&drop_off_date=${dropoffDate}&pick_up_time=10%3A00&drop_off_time=10%3A00&driver_age=30&currency_code=USD`,options)
             .then(response => response.json())
             .then(response => {
                 let source = response.data.search_results;

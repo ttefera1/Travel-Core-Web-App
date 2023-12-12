@@ -27,7 +27,7 @@ des_data.map(item=> {
     let des_data2 = res.data;
 des_data2.map(item2=> {
         console.log(arrivalDate);
-        fetch(`https://booking-com15.p.rapidapi.com/api/v1/flights/searchFlights?fromId=${item.id}&toId=${item2.id}&departDate=${departDate}&returnDate=${arrivalDate}&pageNo=1&adults=1&children=0%2C17&cabinClass=ECONOMY&currency_code=USD`,options)
+        fetch(`https://booking-com15.p.rapidapi.com/api/v1/flights/searchFlights?fromId=${item.id}&toId=${item2.id}&departDate=${departDate}&returnDate=${arrivalDate}&pageNo=1&adults=1&children=0%2C17&cabinClass=${radioButtons}&currency_code=USD`,options)
         .then(response => response.json())
         .then(response => {
             let source = response.data.flightOffers;
