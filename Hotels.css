@@ -651,13 +651,13 @@ box-shadow: inset 380px 0 0 0 rgb(230, 210, 33);
 }
 #hotel img {
 	filter:blur();
-	margin-left: -5px;
+	margin-left: 105px;
 	margin-top: -5px;
 	border-top-right-radius: 20px;
 	border-top-left-radius: 20px;
-	width: 103%;
+	width: 100px;
 	align-items: center;
-	height: auto;
+	height: 100px;
 }
 .hotel-result{
 	width: 100%;
